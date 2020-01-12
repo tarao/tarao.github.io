@@ -13,3 +13,5 @@ title: *title
 favicon:
   url: *favicon
   type: image/png
+exclude:
+  - README.md
