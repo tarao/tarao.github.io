@@ -26,6 +26,33 @@ h1 {
     font-size: 300%;
 }
 
+h2 {
+    font-size: 200%;
+    margin-top: 2.5em;
+    margin-bottom: 1.5em;
+    padding: 3px 3px 3px 0.5em;
+    border-left: 0.4em solid $heading;
+    border-bottom: 2px solid $heading;
+    border-bottom-left-radius: 3px;
+}
+
+h3 {
+    font-size: 180%;
+    margin-top: 1.5em;
+    padding-left: 0.5em;
+    border-left: 0.5em double $heading;
+}
+
+h4 {
+    font-size: 77%;
+    margin: 0;
+
+    .title {
+        font-size: 160%;
+        color: $link;
+    }
+}
+
 a {
     color: $link;
 }
@@ -76,6 +103,102 @@ a {
 
         .hatena .icon {
             border-radius: 16px;
+        }
+    }
+}
+
+.bibliography {
+    li {
+        font-size: 130%;
+        position: relative;
+        margin-bottom: 2em;
+        margin-right: 280px;
+        min-height: 133px;
+
+        & > div {
+            margin-top: 0.5em;
+        }
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        h4 a.title:after {
+            vertical-align: top;
+            font-size: 70%;
+            font-family: "Font Awesome 5 Free";
+            content: "\f35d";
+            margin-left: 0.5em;
+        }
+
+        .doi {
+            font-size: 77%;
+            & a {
+                color: $comment;
+            }
+        }
+
+        .media .title {
+            font-style: italic;
+        }
+
+        .embed {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: -20px;
+            margin-right: -280px;
+            max-width: 272px;
+            max-height: 153px;
+
+            & > * {
+                display: none;
+            }
+
+            & > iframe {
+                display: inline-block;
+                width: 100% ! important;
+                height: 100% ! important;
+                border: none ! important;
+                border-radius: 10px;
+            }
+        }
+
+        .image {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: -20px;
+            margin-right: -280px;
+
+            & img {
+                object-fit: cover;
+                width: 272px;
+                height: 153px;
+                border-radius: 2px;
+            }
+        }
+    }
+
+    &.magazine .image img {
+        object-fit: contain;
+    }
+}
+
+@media all and (max-width: 899px) {
+    .bibliography {
+        li {
+            margin-right: 0;
+
+            .embed, .image {
+                display: none;
+            }
         }
     }
 }

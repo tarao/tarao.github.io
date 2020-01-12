@@ -1,0 +1,38 @@
+- title: Gradual Typing for Generics
+  author:
+    - Lintaro Ina
+    - Atsushi Igarashi
+  conference:
+    title: The ACM Conference on Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA 2011)
+    address: Portland, OR
+    date: October 2011
+    url: https://dl.acm.org/doi/proceedings/10.1145/2048066
+  url: https://www.slideshare.net/oarat/gradual-typing-for-generics
+- title: Gradual Typing for Generics
+  author:
+    - Lintaro Ina
+    - Atsushi Igarashi
+  conference:
+    title: The 8th Asian Symposium on Programming Languages and Systems (APLAS 2010)
+    address: Shanghai, China
+    date: December 2010
+    url: https://basics.sjtu.edu.cn/conference/aplas2010/
+    note: Poster session
+- title: Towards Gradual Typing for Generics
+  author:
+    - Lintaro Ina
+    - Atsushi Igarashi
+  conference:
+    title: The 1st International Workshop on Script to Program Evolution (STOP 09)
+    address: Genova, Italy
+    date: July 2009
+    url: http://wrigstad.com/stop09/STOP/Index.html
+- title: Featherweight Java のための漸進的型付け
+  author:
+    - 伊奈 林太郎
+    - 五十嵐 淳
+  conference:
+    title: 第10回プログラミングおよびプログラミング言語ワークショップ(PPL2008)
+    address: 仙台市太白区
+    date: March 2008
+    url: http://ppl.jssst.or.jp/ppl2008/

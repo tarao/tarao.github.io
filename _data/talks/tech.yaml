@@ -1,0 +1,78 @@
+- title: パネルディスカッション
+  author:
+    - 橋本 泰一
+    - 藤田 亮
+    - 高橋 圭一郎
+    - 伊奈 林太郎
+    - 田中 祥太郎
+  conference:
+    title: "Machine Learning Meetup KANSAI #7"
+    address: 京都市下京区
+    date: November 2019
+    url: https://mlm-kansai.connpass.com/event/152608/
+    note: パネリスト
+- title: 10年でどう変わった? はてなブックマークでのPerlの使い方
+  author: 伊奈 林太郎
+  conference:
+    title: YAPC::Nagoya::Tiny 2019
+    address: 名古屋市中村区
+    date: November 2019
+    url: https://yapcjapan.connpass.com/event/146727/
+    note: ゲストスピーカー
+  url: https://speakerdeck.com/tarao/10nian-dedoubian-watuta-hatenabutukumakudefalseperlfalseshi-ifang
+- title: Percolatorを用いカテゴリ分類
+  author: 伊奈 林太郎
+  conference:
+    title: Elasticsearch勉強会
+    address: 京都市中京区
+    date: August 2018
+    url: https://www.meetup.com/ja-JP/Tokyo-Elastic-Fantastics/events/252971593/
+  url: https://speakerdeck.com/tarao/percolatorwoyong-itakategorifen-lei
+- title: はてなブックマークにおけるアクセス制御 - 半環構造に基づくモデル化
+  author: 伊奈 林太郎
+  conference:
+    title: WebDB Forum 2015
+    address: 東京都江東区
+    date: November 2015
+    url: http://db-event.jpn.org/webdbf2015/
+  url: https://www.slideshare.net/oarat/ss-55487535
+- title: はてなブックマーク in Scala
+  author: 伊奈 林太郎
+  conference:
+    title: Scala関西 Summit 2015
+    address: 大阪市北区
+    date: August 2015
+    url: http://summit.scala-kansai.org/2015/
+  url: https://www.slideshare.net/oarat/2015-0801-scala
+- title: 『BrandSafe はてな』のアドベリフィケーションのしくみ
+  author: 伊奈 林太郎
+  conference:
+    title: "Hatena Engineer Seminar #5"
+    address: 東京都港区
+    date: June 2015
+    url: https://hatena.connpass.com/event/15973/
+  url: https://www.slideshare.net/oarat/brandsafe
+- title: 『BrandSafe はてな』のアドベリフィケーションのしくみ
+  author: 伊奈 林太郎
+  conference:
+    title: アドテクが見据える未来とそれを支える技術
+    address: 東京都港区
+    date: December 2014
+    url: https://techplay.jp/event/263388
+  url: https://www.slideshare.net/oarat/brand-42816575
+- title: Emacs上のターミナルを最強に
+  author: 伊奈 林太郎
+  conference:
+    title: 第6回 関西Emacs勉強会
+    address: 京都市左京区
+    date: October 2012
+    url: https://atnd.org/events/31090
+  url: https://www.slideshare.net/oarat/emacs-56830452
+- title: HTMLからの本文抽出
+  author: 伊奈 林太郎
+  conference:
+    title: Kansai.pm 第11回
+    address: 京都市中京区
+    date: March 2009
+    url: http://perl.jonex.ne.jp/cgi-bin/wiki.cgi?page=%A5%A4%A5%D9%A5%F3%A5%C8%2F%C2%E811%B2%F3%A5%DF%A1%BC%A5%C6%A5%A3%A5%F3%A5%B0%B9%F0%C3%CE
+  url: https://www.slideshare.net/oarat/html-56830187

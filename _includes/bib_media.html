@@ -1,0 +1,71 @@
+{%- assign in = false %}
+{%- assign proceedings = false %}
+{%- assign media = nil %}
+{%- assign media_extra = "" | split: "" %}
+
+{%- if include.item.in %}
+{%- assign in = true %}
+{%- assign media_item = include.item.in %}
+{%- else %}
+{%- assign media_item = include.item %}
+{%- endif -%}
+
+{%- if media_item.media %}
+{%- assign media = media_item.media %}
+{%- elsif media_item.book %}
+{%- assign media = media_item.book %}
+{%- elsif media_item.journal %}
+{%- assign media = media_item.journal %}
+{%- elsif media_item.proceedings %}
+{%- assign proceedings = true %}
+{%- assign media = media_item.proceedings %}
+{%- elsif media_item.conference %}
+{%- assign media = media_item.conference %}
+{%- endif -%}
+
+{%- assign title = media.title %}
+{%- if proceedings %}
+{%- capture title %}Proceedings of {{ title | uncapitalize }}{% endcapture %}
+{%- endif -%}
+
+{%- if media.volume_number %}
+{%- capture title %}{{ title }}, <span class="volume-number">{{ media.volume_number }}</span>{% endcapture %}
+{%- endif -%}
+
+{%- if media.url %}
+{%- capture title %}<a class="title" href="{{ media.url }}">{{ title }}</a>{% endcapture %}
+{%- else %}
+{%- capture title %}<span class="title">{{ title }}</span>{% endcapture %}
+{%- endif -%}
+
+{%- if in %}
+{%- capture title %}In {{ title }}{% endcapture %}
+{%- endif -%}
+
+{%- if media.pages %}
+{%- capture pages %}pages <span class="pages">{{ media.pages }}</span>{% endcapture %}
+{%- assign media_extra = media_extra | push: pages %}
+{%- endif -%}
+
+{%- if media.address %}
+{%- capture address %}<span class="address">{{ media.address }}</span>{% endcapture %}
+{%- assign media_extra = media_extra | push: address %}
+{%- endif -%}
+
+{%- if media.date %}
+{%- capture date %}<span class="date">{{ media.date }}</span>{% endcapture %}
+{%- assign media_extra = media_extra | push: date %}
+{%- endif -%}
+
+{%- if media %}
+  <div class="media">
+    {{ media_extra | unshift: title | join: ", " }}
+    {%- if media.note %}
+    (<span class="note">{{ media.note }}</span>)
+    {%- endif -%}
+    .
+    {%- if media.publisher %}
+    <span class="publisher">{{ media.publisher }}</span>.
+    {%- endif %}
+  </div>
+{%- endif %}
