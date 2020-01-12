@@ -1,0 +1,17 @@
+name: Deployment
+on:
+  push:
+    branches:
+      - source
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Jekyll
+        uses: tarao/jekyll-action@master
+        env:
+          SRC: .
+          GITHUB_TOKEN: ${{ secrets.GitHubToken }}
