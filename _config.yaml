@@ -1,7 +1,7 @@
 author:
   full_name: &title INA Lintaro
   description: A software engineer working at Hatena Co., Ltd.
-  image: https://avatars2.githubusercontent.com/u/132569?s=460&v=4
+  image: &favicon https://avatars2.githubusercontent.com/u/132569?s=460&v=4
   sns:
     hatena: tarao
     twitter: oarat
@@ -10,3 +10,6 @@ author:
     url: https://tarao.hatenablog.com/
     icon: /img/hatenablog.svg
 title: *title
+favicon:
+  url: *favicon
+  type: image/png

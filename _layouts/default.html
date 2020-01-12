@@ -9,6 +9,9 @@
     {%- endif %}
     {{ site.title }}
   </title>
+  {%- if site.favicon %}
+  <link rel="icon" {% if site.favicon.type %}type="{{ site.favicon.type }}" {% endif %} href="{{ site.favicon.url }}">
+  {%- endif %}
   <link rel="stylesheet" href="/css/default.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
   {%- if site.author.sns.hatena %}
