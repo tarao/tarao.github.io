@@ -1,0 +1,42 @@
+{%- assign author = include.author -%}
+
+<div class="profile">
+  <h1 class="full-name">{{ author.full_name }}</h1>
+  <p class="description">{{ author.description }}</p>
+
+  {%- if author.sns or author.blog %}
+  <ul class="sns">
+  {%- for sns in author.sns %}
+    <li class="{{ sns[0] }}">
+      {%- case sns[0] %}
+      {%- when 'hatena' %}
+      <a href="https://www.hatena.ne.jp/{{ sns[1] }}/">
+        <img class="icon" src="https://cdn.profile-image.st-hatena.com/users/{{sns[1]}}/profile.png">
+        id:{{ sns[1] }}
+      </a>
+      {%- when 'github' %}
+      <a href="https://github.com/{{ sns[1] }}/">
+        <img class="icon" src="/img/github.svg">
+        @{{ sns[1] }}
+      </a>
+      {%- when 'twitter' %}
+      <a href="https://twitter.com/{{ sns[1] }}/">
+        <img class="icon" src="/img/twitter.svg">
+        @{{ sns[1] }}
+      </a>
+      {%- endcase %}
+    </li>
+  {%- endfor %}
+  {%- if author.blog %}
+    <li class="blog">
+      <a href="{{ author.blog.url }}">
+        <img class="icon" src="{{ author.blog.icon }}">
+        Blog
+      </a>
+    </li>
+  {%- endif %}
+  </ul>
+  {%- endif %}
+
+  <img class="image" src="{{ author.image }}" alt="{{ author.full_name }}">
+</div>
