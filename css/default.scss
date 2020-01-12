@@ -148,6 +148,59 @@ a {
     }
 }
 
+.education {
+    li {
+        font-size: 130%;
+        position: relative;
+        margin-bottom: 2em;
+        min-height: 3em;
+
+        h4 {
+            float: left;
+        }
+
+        .institute, .department, .field {
+            display: block;
+        }
+
+        .department, .field {
+            font-size: 70%;
+            color: $subtitle;
+        }
+
+        .degree, .note {
+            display: block;
+            color: $info;
+            font-size: 70%;
+            font-style: italic;
+            font-weight: normal;
+        }
+
+        .date {
+            text-align: right;
+
+            .from {
+                text-align: left;
+            }
+
+            .from, .to {
+                display: inline-block;
+                min-width: 6.5em;
+            }
+
+            &:after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+        }
+
+        .location {
+            margin-top: 0.3em;
+        }
+    }
+}
+
 .bibliography {
     li {
         font-size: 130%;
@@ -289,7 +342,7 @@ a {
 }
 
 @media all and (max-width: 1149px) {
-    .work-experience {
+    .work-experience, .education {
         li {
             h4 {
                 float: none;

@@ -18,6 +18,16 @@ repositories:
 {%- endfor %}
 </ul>
 
+## Education
+
+<ul class="education">
+{%- for education in site.data.education %}
+<li>
+{% include education.html education = education %}
+</li>
+{%- endfor %}
+</ul>
+
 ## Publications
 
 ### Academic Papers

@@ -1,0 +1,23 @@
+{%- assign edu = include.education %}
+<h4>
+  {%- if edu.field %}
+  <span class="field">{{ edu.field }},</span>
+  {%- endif %}
+  {%- if edu.department %}
+  <span class="department">{{ edu.department }},</span>
+  {%- endif %}
+  <span class="institute">{{ edu.institute }}</span>
+  {%- if edu.degree %}
+  <span class="degree">{{ edu.degree }}</span>
+  {%- endif %}
+  {%- if edu.note %}
+  <span class="note">{{ edu.note }}</span>
+  {%- endif %}
+</h4>
+<div class="date">
+  <span class="from left">{{ edu.date.from }}</span>
+  <span class="right">
+    - <span class="to">{{ edu.date.to }}</span>
+  </span>
+</div>
+<div class="location">{{ edu.location }}</div>
