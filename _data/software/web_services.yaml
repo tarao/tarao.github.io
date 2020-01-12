@@ -1,0 +1,6 @@
+- name: はてなブックマーク
+  url: https://b.hatena.ne.jp/
+  description: The largest social bookmark service in Japan.
+  role: the architect and main implementer of the 4th generation of the system, and the tech lead of the development team
+  date:
+    from: February 2015

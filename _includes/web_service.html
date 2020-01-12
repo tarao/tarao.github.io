@@ -1,0 +1,18 @@
+{%- assign service = include.service %}
+<h4 class="name">
+  <a href="{{ service.url }}">{{ service.name }}</a>
+  <a href="https://b.hatena.ne.jp/entry/{{ service.url | url_encode }}">
+    <img src="https://b.hatena.ne.jp/entry/image/{{ service.url }}">
+  </a>
+</h4>
+<div class="description">{{ service.description }}</div>
+{%- if service.role %}
+<div class="role">As {{ service.role | uncapitalize }}.</div>
+{%- endif %}
+<div class="meta">
+  {%- if service.date %}
+  <span class="date">
+    From <span clas="from">{{ service.date.from }}</span>{% if service.date.to %} to <span clas="to">{{ service.date.to }}</span>{% endif %}.
+  </span>
+  {%- endif %}
+</div>

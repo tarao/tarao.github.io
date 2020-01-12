@@ -44,6 +44,16 @@ repositories:
 
 ## Software
 
+### Web Services
+
+<ul class="web-services">
+{%- for service in site.data.software.web_services %}
+<li>
+{% include web_service.html service = service %}
+</li>
+{%- endfor %}
+</ul>
+
 ### Maintaining Repositories (with ★{{ page.repositories.maintaining.min_stargazers }}+)
 
 <ul class="repositories maintaining">
