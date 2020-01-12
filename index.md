@@ -1,5 +1,10 @@
 ---
 layout: default
+repositories:
+  maintaining:
+    min_stargazers: 30
+  contributing:
+    min_stargazers: 50
 ---
 {%- include profile.html author = site.author %}
 
@@ -36,3 +41,31 @@ layout: default
 {% include bibliography.html
    category = 'interviews'
    items = site.data.interviews %}
+
+## Software
+
+### Maintaining Repositories (with ★{{ page.repositories.maintaining.min_stargazers }}+)
+
+<ul class="repositories maintaining">
+{%- githubrepos
+    min_stargazers: page.repositories.maintaining.min_stargazers
+    role: committer %}
+<li>
+{%- assign role = site.data.repositories.roles[repository.name] %}
+{% include github_repo.html role = role %}
+</li>
+{%- endgithubrepos %}
+</ul>
+
+### Contributing Repositories (with ★{{ page.repositories.contributing.min_stargazers }}+)
+
+<ul class="repositories contributing">
+{%- githubrepos
+    min_stargazers: page.repositories.contributing.min_stargazers
+    role: contributor %}
+<li>
+{%- assign role = site.data.repositories.roles[repository.name] %}
+{% include github_repo.html role = role %}
+</li>
+{%- endgithubrepos %}
+</ul>

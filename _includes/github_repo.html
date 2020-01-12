@@ -1,0 +1,25 @@
+<h4 class="name">
+  <a href="{{ repository.url }}">{{ repository.name }}</a>
+  <a href="https://b.hatena.ne.jp/entry/{{ repository.url | url_encode }}">
+    <img src="https://b.hatena.ne.jp/entry/image/{{ repository.url }}">
+  </a>
+</h4>
+<div class="description">{{ repository.description }}</div>
+{%- if include.role %}
+<div class="role">As {{ include.role | uncapitalize }}.</div>
+{%- endif %}
+<ul class="meta">
+  <li class="stargazers"><a href="{{ repository.url }}/stargazers">★ {{ repository.stargazers | intcomma }}</a></li>
+  {%- for i in (0..0) %}
+  {%- if repository.languages[i] %}
+  {%- assign lang = repository.languages[i] %}
+  <li class="language" title="{{ lang.name }}: {{ lang.coverage }}%">
+    <span class="color" style="background-color: {{ lang.color }}"></span>
+    <span class="name">{{ lang.name }}</span>
+  </li>
+  {%- endif %}
+  {%- endfor %}
+  {%- comment %}
+  <li class="contributions">{{ repository.contributions.commits }} commits</li>
+  {%- endcomment %}
+</ul>

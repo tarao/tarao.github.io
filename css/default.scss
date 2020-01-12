@@ -47,7 +47,7 @@ h4 {
     font-size: 77%;
     margin: 0;
 
-    .title {
+    .title, &.name {
         font-size: 160%;
         color: $link;
     }
@@ -188,6 +188,62 @@ a {
 
     &.magazine .image img {
         object-fit: contain;
+    }
+}
+
+.repositories {
+    li {
+        font-size: 130%;
+        position: relative;
+        margin-bottom: 2em;
+
+        & > div {
+            margin-top: 0.5em;
+        }
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .role {
+        color: $info;
+        font-style: italic;
+    }
+
+    .meta {
+        margin: 0.5em 0 0 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            margin: 0;
+            font-size: 100%;
+
+            &.language {
+                min-width: 8em;
+
+                .color {
+                    display: inline-block;
+                    position: relative;
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 50%;
+                }
+            }
+
+            &.stargazers {
+                min-width: 4.5em;
+
+                a {
+                    color: $foreground;
+                }
+            }
+        }
     }
 }
 
