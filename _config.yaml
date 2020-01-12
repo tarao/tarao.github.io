@@ -16,3 +16,5 @@ favicon:
   type: image/png
 exclude:
   - README.md
+  - LICENSE
+  - Makefile
