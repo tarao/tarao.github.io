@@ -1,3 +1,4 @@
+timezone: UTC
 author:
   full_name: &title INA Lintaro
   description: A software engineer working at Hatena Co., Ltd.

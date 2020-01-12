@@ -19,4 +19,9 @@
   {%- endif %}
 </head><body><section>
 {{ content }}
+<footer>
+  <div class="updated">
+    Updated at {{ site.time | date_to_xmlschema }}
+  </div>
+</footer>
 </section></body></html>
