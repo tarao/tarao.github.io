@@ -12,7 +12,7 @@
   {%- if site.favicon %}
   <link rel="icon" {% if site.favicon.type %}type="{{ site.favicon.type }}" {% endif %} href="{{ site.favicon.url }}">
   {%- endif %}
-  <link rel="stylesheet" href="/css/default.css">
+  <link rel="stylesheet" href="/css/default.css?{{ site.time | date: '%s' }}">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
   {%- if site.author.sns.hatena %}
   <link rel="author" href="http://www.hatena.ne.jp/{{ site.author.sns.hatena }}/">
