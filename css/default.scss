@@ -44,13 +44,10 @@ h3 {
 }
 
 h4 {
-    font-size: 77%;
     margin: 0;
 
-    .title, &.name {
-        font-size: 160%;
+        font-size: 135%;
         color: $link;
-    }
 }
 
 a {
@@ -103,6 +100,50 @@ a {
 
         .hatena .icon {
             border-radius: 16px;
+        }
+    }
+}
+
+.work-experience {
+    li {
+        font-size: 130%;
+        position: relative;
+        margin-bottom: 2em;
+        min-height: 3em;
+
+        h4 {
+            float: left;
+        }
+
+        .role {
+            display: block;
+            color: $info;
+            font-size: 70%;
+            font-style: italic;
+            font-weight: normal;
+        }
+
+        .date {
+            text-align: right;
+
+            .from {
+                text-align: left;
+            }
+
+            .from, .to {
+                display: inline-block;
+                min-width: 6.5em;
+            }
+
+            &:after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+        }
+
+        .note {
+            margin-top: 0.3em;
         }
     }
 }
@@ -242,6 +283,16 @@ a {
                 a {
                     color: $foreground;
                 }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1149px) {
+    .work-experience {
+        li {
+            h4 {
+                float: none;
             }
         }
     }

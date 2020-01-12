@@ -1,0 +1,16 @@
+{%- assign work = include.work %}
+<h4>
+  {{ work.place }}
+  <span class="role">{{ work.role }}</span>
+</h4>
+<div class="date">
+  <span class="from left">{{ work.date.from }}</span>
+  <span class="right">
+    - <span class="to">{{ work.date.to }}</span>
+  </span>
+</div>
+{%- if work.note %}
+<div class="note">
+  {{ work.note }}
+</div>
+{%- endif %}

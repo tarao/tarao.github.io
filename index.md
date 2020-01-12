@@ -8,6 +8,16 @@ repositories:
 ---
 {%- include profile.html author = site.author %}
 
+## Work Experience
+
+<ul class="work-experience">
+{%- for work in site.data.work_experience %}
+<li>
+{% include work.html work = work %}
+</li>
+{%- endfor %}
+</ul>
+
 ## Publications
 
 ### Academic Papers

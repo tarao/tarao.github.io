@@ -1,0 +1,27 @@
+- role: Web Application Engineer
+  place: Hatena Co., Ltd.
+  note: A tech lead, a senior engineer.
+  date:
+    from: April 2013
+    to: present
+- role: Research Fellow (DC1)
+  place: The Japan Society for the Promotion of Science
+  date:
+    from: April 2010
+    to: March 2013
+- role: Teaching Assistant
+  place: Kyoto University
+  note: For Computation and Logic, Hardware and Software Laboratory Project 3, 4.
+  date:
+    from: April 2008
+    to: March 2013
+- role: Web Application Engineer (part-time)
+  place: Hatena Co., Ltd.
+  date:
+    from: October 2008
+    to: March 2010
+- role: Web Application Engineer (internship)
+  place: Hatena Co., Ltd.
+  date:
+    from: August 2008
+    to: August 2008
