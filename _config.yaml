@@ -1,8 +1,8 @@
 timezone: UTC
 author:
   full_name: &title INA Lintaro
-  description: A software engineer working at Hatena Co., Ltd.
-  image: &favicon https://avatars2.githubusercontent.com/u/132569?s=460&v=4
+  description: &description A software engineer working at Hatena Co., Ltd.
+  image: &image https://avatars2.githubusercontent.com/u/132569?s=460&v=4
   sns:
     hatena: tarao
     twitter: oarat
@@ -13,8 +13,12 @@ author:
     icon: /img/hatenablog.svg
 title: *title
 favicon:
-  url: *favicon
+  url: *image
   type: image/png
+og:
+  title: *title
+  description: *description
+  image: *image
 google_analytics:
   id: UA-156069885-1
 exclude:

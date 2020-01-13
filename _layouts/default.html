@@ -17,6 +17,25 @@
   {%- if site.author.sns.hatena %}
   <link rel="author" href="http://www.hatena.ne.jp/{{ site.author.sns.hatena }}/">
   {%- endif %}
+  <meta name="twitter:card" content="summary">
+  {%- if site.author.sns.twitter %}
+  <meta name="twitter:creator" content="@{{ site.author.sns.twitter }}">
+  {%- endif %}
+  {%- if page.title %}
+  <meta property="og:title" content="{{ page.title }}">
+  {%- elsif site.og.title %}
+  <meta property="og:title" content="{{ site.og.title }}">
+  {%- endif %}
+  {%- if page.description %}
+  <meta property="og:description" content="{{ page.description }}">
+  {%- elsif site.og.description %}
+  <meta property="og:description" content="{{ site.og.description }}">
+  {%- endif %}
+  {%- if page.image %}
+  <meta property="og:image" content="{{ page.image }}">
+  {%- elsif site.og.image %}
+  <meta property="og:image" content="{{ site.og.image }}">
+  {%- endif %}
   {%- if site.google_analytics.id %}
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics.id }}"></script>
