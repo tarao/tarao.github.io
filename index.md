@@ -62,6 +62,22 @@ repositories:
    category = 'interviews'
    items = site.data.interviews %}
 
+## Blog Posts
+
+### Personal Tech Blog Articles (with 50+ bookmarks)
+
+<ul class="blog">
+{%- rssfeed url: https://b.hatena.ne.jp/search/text?q=site%3Ahttps%3A%2F%2Ftarao.hatenablog.com%2F&users=50&mode=rss %}
+<li>
+{% include feed_item.html
+   item = item
+   site_title = site.author.blog.title %}
+</li>
+{%- endrssfeed %}
+</ul>
+
+<iframe src="https://blog.hatena.ne.jp/tarao/tarao.hatenablog.com/subscribe/iframe" allowtransparency="true" frameborder="0" scrolling="no" width="150" height="28"></iframe>
+
 ## Software
 
 ### Web Services

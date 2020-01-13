@@ -1,0 +1,14 @@
+{%- assign item = include.item %}
+<h4>
+  <a class="title" href="{{ item.link }}">
+    {%- if include.site_title %}
+    {{ item.title | strip_title: include.site_title }}
+    {%- else %}
+    {{ item.title }}
+    {%- endif %}
+  </a>
+  <a href="https://b.hatena.ne.jp/entry/{{ item.link | url_encode }}">
+    <img src="https://b.hatena.ne.jp/entry/image/{{ item.link }}">
+  </a>
+</h4>
+<div class="date">{{ item.date | date: '%B %Y' }}</div>
