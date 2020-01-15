@@ -78,6 +78,23 @@ repositories:
 
 <iframe src="https://blog.hatena.ne.jp/tarao/tarao.hatenablog.com/subscribe/iframe" allowtransparency="true" frameborder="0" scrolling="no" width="150" height="28"></iframe>
 
+### Contributed Articles to Hatena Developer Blog
+
+<ul class="blog">
+{%- scrape url: https://developer.hatenastaff.com/archive/author/tarao
+           item:  section.archive-entry
+           title: .entry-title-link
+           link:  .entry-title-link
+           date:  .archive-date %}
+<li>
+{% include feed_item.html
+   item = item %}
+</li>
+{%- endscrape %}
+</ul>
+
+<iframe src="https://blog.hatena.ne.jp/hatenatech/developer.hatenastaff.com/subscribe/iframe" allowtransparency="true" frameborder="0" scrolling="no" width="150" height="28"></iframe>
+
 ## Software
 
 ### Web Services
