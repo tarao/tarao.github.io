@@ -58,14 +58,14 @@
 {%- endif -%}
 
 {%- if media %}
-  <div class="media">
-    {{ media_extra | unshift: title | join: ", " }}
-    {%- if media.note %}
-    (<span class="note">{{ media.note }}</span>)
-    {%- endif -%}
-    .
-    {%- if media.publisher %}
-    <span class="publisher">{{ media.publisher }}</span>.
-    {%- endif %}
-  </div>
-{%- endif %}
+<div class="media">
+  {{ media_extra | unshift: title | join: ", " }}
+  {%- if media.note %}
+  (<span class="note">{{ media.note }}</span>)
+  {%- endif -%}
+  .
+  {%- if media.publisher %}
+  <span class="publisher">{{ media.publisher }}</span>.
+  {%- endif %}
+</div>
+{%- endif -%}

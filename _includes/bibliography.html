@@ -1,5 +1,7 @@
 <ul class="bibliography {% if include.category %} {{ include.category }}{% endif %}">
 {%- for item in include.items %}
-{%- include bib_item.html item = item %}
+<li>
+{%- include bib_item.html item = item -%}
+</li>
 {%- endfor %}
 </ul>
