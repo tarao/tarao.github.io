@@ -29,6 +29,14 @@
 
 {%- if item.image %}
 <div class="image">
+  {%- if item.image.url %}
+  {%- if item.image.link %}
+  <a href="{{ item.image.link }}"><img src="{{ item.image.url }}"></a>
+  {%- else %}
+  <img src="{{ item.image.url }}">
+  {%- endif %}
+  {%- else %}
   <img src="{{ item.image }}">
+  {%- endif %}
 </div>
 {%- endif %}
