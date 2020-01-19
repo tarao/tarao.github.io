@@ -8,6 +8,7 @@
     date: October 2011
     url: https://dl.acm.org/doi/proceedings/10.1145/2048066
   url: https://www.slideshare.net/oarat/gradual-typing-for-generics
+  lang: en
 - title: Gradual Typing for Generics
   author:
     - Lintaro Ina
@@ -18,6 +19,7 @@
     date: December 2010
     url: https://basics.sjtu.edu.cn/conference/aplas2010/
     note: Poster session
+  lang: en
 - title: Towards Gradual Typing for Generics
   author:
     - Lintaro Ina
@@ -27,6 +29,7 @@
     address: Genova, Italy
     date: July 2009
     url: http://wrigstad.com/stop09/STOP/Index.html
+  lang: en
 - title: Featherweight Java のための漸進的型付け
   author:
     - 伊奈 林太郎
@@ -36,3 +39,4 @@
     address: 仙台市太白区
     date: March 2008
     url: http://ppl.jssst.or.jp/ppl2008/
+  lang: ja

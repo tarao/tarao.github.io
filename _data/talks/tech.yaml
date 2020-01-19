@@ -20,6 +20,7 @@
     url: https://yapcjapan.connpass.com/event/146727/
     note: ゲストスピーカー
   url: https://speakerdeck.com/tarao/10nian-dedoubian-watuta-hatenabutukumakudefalseperlfalseshi-ifang
+  lang: ja
 - title: Percolatorを用いたカテゴリ分類
   author: 伊奈 林太郎
   conference:
@@ -28,6 +29,7 @@
     date: August 2018
     url: https://www.meetup.com/ja-JP/Tokyo-Elastic-Fantastics/events/252971593/
   url: https://speakerdeck.com/tarao/percolatorwoyong-itakategorifen-lei
+  lang: ja
 - title: はてなブックマークにおけるアクセス制御 - 半環構造に基づくモデル化
   author: 伊奈 林太郎
   conference:
@@ -36,6 +38,7 @@
     date: November 2015
     url: http://db-event.jpn.org/webdbf2015/
   url: https://www.slideshare.net/oarat/ss-55487535
+  lang: ja
 - title: はてなブックマーク in Scala
   author: 伊奈 林太郎
   conference:
@@ -44,6 +47,7 @@
     date: August 2015
     url: http://summit.scala-kansai.org/2015/
   url: https://www.slideshare.net/oarat/2015-0801-scala
+  lang: ja
 - title: 『BrandSafe はてな』のアドベリフィケーションのしくみ
   author: 伊奈 林太郎
   conference:
@@ -52,6 +56,7 @@
     date: June 2015
     url: https://hatena.connpass.com/event/15973/
   url: https://www.slideshare.net/oarat/brandsafe
+  lang: ja
 - title: 『BrandSafe はてな』のアドベリフィケーションのしくみ
   author: 伊奈 林太郎
   conference:
@@ -60,6 +65,7 @@
     date: December 2014
     url: https://techplay.jp/event/263388
   url: https://www.slideshare.net/oarat/brand-42816575
+  lang: ja
 - title: Emacs上のターミナルを最強に
   author: 伊奈 林太郎
   conference:
@@ -68,6 +74,7 @@
     date: October 2012
     url: https://atnd.org/events/31090
   url: https://www.slideshare.net/oarat/emacs-56830452
+  lang: ja
 - title: HTMLからの本文抽出
   author: 伊奈 林太郎
   conference:
@@ -76,3 +83,4 @@
     date: March 2009
     url: http://perl.jonex.ne.jp/cgi-bin/wiki.cgi?page=%A5%A4%A5%D9%A5%F3%A5%C8%2F%C2%E811%B2%F3%A5%DF%A1%BC%A5%C6%A5%A3%A5%F3%A5%B0%B9%F0%C3%CE
   url: https://www.slideshare.net/oarat/html-56830187
+  lang: ja

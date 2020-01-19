@@ -11,6 +11,7 @@
       url: https://dl.acm.org/doi/proceedings/10.1145/2048066
   url: http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/papers/pdf/ggen-oopsla11.pdf
   doi: 10.1145/2048066.2048114
+  lang: en
 - title: Towards Gradual Typing for Generics
   author:
     - Lintaro Ina
@@ -24,6 +25,7 @@
       url: https://dl.acm.org/doi/proceedings/10.1145/1570506
   url: http://www.fos.kuis.kyoto-u.ac.jp/~igarashi/papers/pdf/ggen-STOP09.pdf
   doi: 10.1145/1570506.1570509
+  lang: en
 - title: Featherweight Java のための漸進的型付け
   author:
     - 伊奈 林太郎
@@ -36,3 +38,4 @@
     note: PPL2008特集号
   url: https://www.jstage.jst.go.jp/article/jssst/26/2/26_2_2_18/_pdf/-char/ja
   doi: 10.11309/jssst.26.2_18
+  lang: ja

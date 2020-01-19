@@ -10,6 +10,7 @@
   image:
     url: https://gihyo.jp/assets/images/cover/2020/thumb/TH160_642001.jpg
     link: *sd_2020-01
+  lang: ja
 - title: 機能を最大限に活かすコーディング術 Scalaで始める，型安全な関数型プログラミング
   subtitle: 第1特集 なぜ関数型プログラミングは難しいのか？ Lisp，Scala，Haskell，Elixir，Python，Clojure，関数型のエッセンスを学習する 第3章
   author: 伊奈 林太郎
@@ -22,3 +23,4 @@
   image:
     url: https://gihyo.jp/assets/images/cover/2015/thumb/TH160_641508.jpg
     link: *sd_2015-08
+  lang: ja

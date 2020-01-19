@@ -1,6 +1,6 @@
 {%- assign item = include.item %}
 <h4>
-  {%- if item.subtitle %}
+  {%- if item.subtitle and item.lang == 'ja' %}
   <span class="subtitle">{{ item.subtitle }}</span>
   {%- endif %}
   {%- if item.url %}
@@ -10,6 +10,9 @@
   </a>
   {%- else %}
   <span class="title">{{ item.title }}</span>
+  {%- endif %}
+  {%- if item.subtitle and item.lang != 'ja' %}
+  <span class="subtitle">{{ item.subtitle }}</span>
   {%- endif %}
 </h4>
 {%- if item.doi %}
