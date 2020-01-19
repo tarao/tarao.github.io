@@ -1,4 +1,5 @@
 - title: ひとつひとつのサービスはどのように作れば良い？ モノリシックなサービスを上手に切り分けるコツとは
+  subtitle: 第1特集 「メリットは？」「設計は？」「運用は？」 一問一答！ マイクロサービスアーキテクチャ 第2章
   author: 伊奈 林太郎
   journal:
     title: Software Design
@@ -6,11 +7,11 @@
     pages: 27-37
     publisher: 技術評論社
     url: &sd_2020-01 https://gihyo.jp/magazine/SD/archive/2020/202001
-    note: 第1特集 「メリットは？」「設計は？」「運用は？」 一問一答！ マイクロサービスアーキテクチャ 第2章
   image:
     url: https://gihyo.jp/assets/images/cover/2020/thumb/TH160_642001.jpg
     link: *sd_2020-01
 - title: 機能を最大限に活かすコーディング術 Scalaで始める，型安全な関数型プログラミング
+  subtitle: 第1特集 なぜ関数型プログラミングは難しいのか？ Lisp，Scala，Haskell，Elixir，Python，Clojure，関数型のエッセンスを学習する 第3章
   author: 伊奈 林太郎
   journal:
     title: Software Design
@@ -18,7 +19,6 @@
     pages: 40-45
     publisher: 技術評論社
     url: &sd_2015-08 https://gihyo.jp/magazine/SD/archive/2015/201508
-    note: 第1特集 なぜ関数型プログラミングは難しいのか？ Lisp，Scala，Haskell，Elixir，Python，Clojure，関数型のエッセンスを学習する 第3章
   image:
     url: https://gihyo.jp/assets/images/cover/2015/thumb/TH160_641508.jpg
     link: *sd_2015-08

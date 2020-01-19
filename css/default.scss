@@ -240,6 +240,13 @@ a {
             margin-left: 0.5em;
         }
 
+        .subtitle {
+            display: block;
+            font-size: 70%;
+            color: $subtitle;
+            margin-bottom: 0.5em;
+        }
+
         .doi {
             font-size: 77%;
             & a {

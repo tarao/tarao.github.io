@@ -1,5 +1,8 @@
 {%- assign item = include.item %}
 <h4>
+  {%- if item.subtitle %}
+  <span class="subtitle">{{ item.subtitle }}</span>
+  {%- endif %}
   {%- if item.url %}
   <a class="title" href="{{ item.url }}">{{ item.title }}</a>
   <a href="https://b.hatena.ne.jp/entry/{{ item.url | url_encode }}">
