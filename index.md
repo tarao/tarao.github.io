@@ -81,16 +81,12 @@ repositories:
 ### Contributed Articles to Hatena Developer Blog
 
 <ul class="blog">
-{%- scrape url: https://developer.hatenastaff.com/archive/author/tarao
-           item:  section.archive-entry
-           title: .entry-title-link
-           link:  .entry-title-link
-           date:  .archive-date %}
+{%- rssfeed url: https://developer.hatenastaff.com/rss/author/tarao %}
 <li>
 {% include feed_item.html
    item = item %}
 </li>
-{%- endscrape %}
+{%- endrssfeed %}
 </ul>
 
 <iframe src="https://blog.hatena.ne.jp/hatenatech/developer.hatenastaff.com/subscribe/iframe" allowtransparency="true" frameborder="0" scrolling="no" width="150" height="28"></iframe>
