@@ -1,3 +1,16 @@
+- title: "[概要編] Web APIの全体像を知る"
+  subtitle: 第1特集 Web API設計・開発入門 公開・運用も見据えたベターなやり方とは
+  author: 伊奈 林太郎
+  journal:
+    title: Software Design
+    volume_number: 2021年2月号
+    pages: 18-26
+    publisher: 技術評論社
+    url: &sd_2021-02 https://gihyo.jp/magazine/SD/archive/2021/202102
+  image:
+    url: https://gihyo.jp/assets/images/cover/2021/thumb/TH160_642102.jpg
+    link: *sd_2021-02
+  lang: ja
 - title: ひとつひとつのサービスはどのように作れば良い？ モノリシックなサービスを上手に切り分けるコツとは
   subtitle: 第1特集 「メリットは？」「設計は？」「運用は？」 一問一答！ マイクロサービスアーキテクチャ 第2章
   author: 伊奈 林太郎
