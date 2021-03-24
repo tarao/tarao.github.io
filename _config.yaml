@@ -21,6 +21,8 @@ og:
   image: *image
 google_analytics:
   id: UA-156069885-1
+clarity:
+  id: 5ycdnncbnu
 exclude:
   - README.md
   - LICENSE
