@@ -115,6 +115,14 @@ a {
     }
 }
 
+.toc {
+    padding: 0;
+    li {
+        display: inline-block;
+        margin-right: 1em;
+    }
+}
+
 .work-experience {
     li {
         font-size: 130%;

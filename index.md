@@ -8,7 +8,17 @@ repositories:
 ---
 {%- include profile.html author = site.author %}
 
-## Work Experience
+<ul class="toc">
+<li><a target="_self" href="#work-exp">Work Experience</a></li>
+<li><a target="_self" href="#education">Education</a></li>
+<li><a target="_self" href="#publications">Publications</a></li>
+<li><a target="_self" href="#talks">Talks</a></li>
+<li><a target="_self" href="#interviews">Interviews</a></li>
+<li><a target="_self" href="#blog-posts">Blog Posts</a></li>
+<li><a target="_self" href="#software">Software</a></li>
+</ul>
+
+## Work Experience <a id="work-exp"></a>
 
 <ul class="work-experience">
 {%- for work in site.data.work_experience %}
@@ -18,7 +28,7 @@ repositories:
 {%- endfor %}
 </ul>
 
-## Education
+## Education <a id="education"></a>
 
 <ul class="education">
 {%- for education in site.data.education %}
@@ -28,7 +38,7 @@ repositories:
 {%- endfor %}
 </ul>
 
-## Publications
+## Publications <a id="publications"></a>
 
 ### Academic Papers
 
@@ -42,7 +52,7 @@ repositories:
    category = 'magazine'
    items = site.data.publications.magazine %}
 
-## Talks
+## Talks <a id="talks"></a>
 
 ### Research Talks
 
@@ -56,13 +66,13 @@ repositories:
    category = 'tech-talks'
    items = site.data.talks.tech %}
 
-## Interviews
+## Interviews <a id="interviews"></a>
 
 {% include bibliography.html
    category = 'interviews'
    items = site.data.interviews %}
 
-## Blog Posts
+## Blog Posts <a id="blog-posts"></a>
 
 ### Personal Tech Blog Articles (with 50+ bookmarks)
 
@@ -91,7 +101,7 @@ repositories:
 
 <iframe src="https://blog.hatena.ne.jp/hatenatech/developer.hatenastaff.com/subscribe/iframe" allowtransparency="true" frameborder="0" scrolling="no" width="150" height="28"></iframe>
 
-## Software
+## Software <a id="software"></a>
 
 ### Web Services
 
