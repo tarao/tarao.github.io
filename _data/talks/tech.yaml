@@ -1,3 +1,17 @@
+- title: 10年愛され続けるWebサービスの舞台裏 ～楽天市場・はてなブックマーク・pixiv～
+  author:
+    - 橋詰 尚毅
+    - 伊奈 林太郎
+    - 道井 俊介
+    - 近藤 佑子
+  conference:
+    title: Developers Summit 2022
+    address: Online
+    date: February 2022
+    url: https://event.shoeisha.jp/devsumi/20220217
+    note: パネリスト
+  url: https://event.shoeisha.jp/devsumi/20220217/session/3668/
+  lang: ja
 - title: パネルディスカッション
   author:
     - 橋本 泰一
