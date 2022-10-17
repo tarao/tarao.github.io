@@ -1,3 +1,13 @@
+- title: 型レベル処理系を実装して言語仕様を理解する
+  author: 伊奈 林太郎
+  conference:
+    title: 技育祭2022秋
+    address: オンライン
+    date: October 2022
+    url: https://talent.supporterz.jp/geeksai/2022autumn/
+    note: スポンサーLT
+  url: https://docs.google.com/presentation/d/18aoa8rjH9NidO64OYukbVnyEuNRzspzAOooCMFmO6fo/edit?usp=sharing
+  lang: ja
 - title: 10年愛され続けるWebサービスの舞台裏 ～楽天市場・はてなブックマーク・pixiv～
   author:
     - 橋詰 尚毅
@@ -25,6 +35,7 @@
     date: November 2019
     url: https://mlm-kansai.connpass.com/event/152608/
     note: パネリスト
+  lang: ja
 - title: 10年でどう変わった? はてなブックマークでのPerlの使い方
   author: 伊奈 林太郎
   conference:
