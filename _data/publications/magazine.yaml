@@ -1,3 +1,16 @@
+- title: パーソナルスキルを磨く
+  subtitle: 第2特集 ITエンジニアスキルアッププログラム キャリアプランの考え方・効果的な勉強法 第3章
+  author: 伊奈 林太郎
+  journal:
+    title: Software Design
+    volume_number: 2023年3月号
+    pages: 84-89
+    publisher: 技術評論社
+    url: &sd_2023-03 https://gihyo.jp/magazine/SD/archive/2023/202303
+  image:
+    url: https://gihyo.jp/assets/images/cover/2023/thumb/TH160_642303.jpg
+    link: *sd_2023-03
+  lang: ja
 - title: "[概要編] Web APIの全体像を知る"
   subtitle: 第1特集 Web API設計・開発入門 公開・運用も見据えたベターなやり方とは 第1章
   author: 伊奈 林太郎
