@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Jekyll
-        uses: helaili/jekyll-action@v2
+        uses: helaili/jekyll-action@v2.5
         with:
           token: ${{ secrets.GitHubToken }}
         env:
