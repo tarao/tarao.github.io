@@ -1,3 +1,12 @@
+- title: ジョブキューシステムFireworqのアーキテクチャ設計と運用時のベストプラクティス
+  author: 伊奈 林太郎
+  conference:
+    title: YAPC::Kyoto 2023
+    address: 京都市下京区
+    date: March 2023
+    url: https://yapcjapan.org/2023kyoto/
+  url: https://speakerdeck.com/tarao/fireworq
+  lang: ja
 - title: 型レベル処理系を実装して言語仕様を理解する
   author: 伊奈 林太郎
   conference:
