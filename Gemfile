@@ -1,1 +1,8 @@
-script/Gemfile
+source "https://rubygems.org"
+
+gem "jekyll", "~> 4.3.2"
+gem "ruby-oembed"
+gem "graphql", '>= 2.0.27', '< 2.3'
+gem "graphql-client"
+gem "nokogiri"
+gem "rss"
