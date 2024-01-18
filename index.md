@@ -77,7 +77,7 @@ repositories:
 ### Personal Tech Blog Articles (with 50+ bookmarks)
 
 <ul class="blog">
-{%- rssfeed url: https://b.hatena.ne.jp/q/site%3Ahttps%3A%2F%2Ftarao.hatenablog.com%2F?mode=rss&target=text&users=50 %}
+{%- rssfeed url: https://b.hatena.ne.jp/q/site%3Ahttps%3A%2F%2Ftarao.hatenablog.com%2F?mode=rss&target=text&users=50&date_range=1000y %}
 <li>
 {% include feed_item.html
    item = item
