@@ -1,16 +1,14 @@
-JEKYLL_SERVE_COMMAND=bundle exec jekyll serve --trace
-JEKYLL_BUILD_COMMAND=bundle exec jekyll build
+JEKYLL_SERVE_COMMAND=script/jekyll serve --host 0.0.0.0 --incremental --trace
+JEKYLL_BUILD_COMMAND=script/jekyll build
 TOKEN_CHECK_COMMAND=git config jekyll.github.token >/dev/null
 
 .PHONY: serve
 serve: token-check
-	bundle install
 	@echo ${JEKYLL_SERVE_COMMAND}
 	@GITHUB_TOKEN=$(shell git config jekyll.github.token) ${JEKYLL_SERVE_COMMAND}
 
 .PHONY: build
 build: token-check
-	bundle install
 	@echo ${JEKYLL_BUILD_COMMAND}
 	@GITHUB_TOKEN=$(shell git config jekyll.github.token) ${JEKYLL_BUILD_COMMAND}
 

@@ -11,10 +11,25 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: Jekyll
-        uses: helaili/jekyll-action@v2.5
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          token: ${{ secrets.GitHubToken }}
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: bundle install
+        run: bundle install
+
+      - name: Jekyll
         env:
-          GITHUB_TOKEN: ${{ secrets.GitHubToken }}
+          GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
+        run: bundle exec jekyll build
+
+      - name: Publish site
+        uses: peaceiris/actions-gh-pages@v3.9.3
+        with:
+          github_token: ${{ secrets.GITHUBTOKEN }}
+          publish_dir: _site

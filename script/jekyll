@@ -1,0 +1,21 @@
+#!/bin/env bash
+
+set -xe
+
+ROOT="$(cd $(dirname "$0")/..; pwd)"
+cd "$ROOT"
+
+ARGS="$@"
+
+rm -f Gemfile.lock
+
+docker build -t jekyll script/
+exec docker run --rm -i \
+       -e GITHUB_TOKEN="$GITHUB_TOKEN" \
+       -e BUNDLE_APP_CONFIG= \
+       -u `id -u`:`id -g` \
+       -v "$(pwd)":/workspace \
+       -p 4000:4000 \
+       jekyll \
+       bash -c "bundle config set --local path /opt/jekyll/vendor/bundle && \
+                bundle exec jekyll ${ARGS}"
