@@ -1,3 +1,11 @@
+- title: 仮想関数テーブルと型クラスを見比べる
+  author: 伊奈 林太郎
+  conference:
+    title: 第五回関数型プログラミング（仮）の会
+    address: 東京都渋谷区
+    date: January 2024
+    url: https://nextbeat.connpass.com/event/305078/
+  url: https://speakerdeck.com/tarao/comparing-vtables-and-type-classes
 - title: ジョブキューシステムFireworqのアーキテクチャ設計と運用時のベストプラクティス
   author: 伊奈 林太郎
   conference:
