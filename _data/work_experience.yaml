@@ -1,9 +1,14 @@
+- role: Engineer
+  place: Ikyu Corporation
+  date:
+    from: June 2024
+    to: present
 - role: Web Application Engineer
   place: Hatena Co., Ltd.
   note: An engineering manager, a chief engineer.  Formerly a tech lead, a senior engineer.
   date:
     from: April 2013
-    to: present
+    to: May 2024
 - role: Research Fellow (DC1)
   place: The Japan Society for the Promotion of Science
   date:

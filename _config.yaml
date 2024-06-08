@@ -1,7 +1,7 @@
 timezone: UTC
 author:
   full_name: &title INA Lintaro
-  description: &description A software engineer working at Hatena Co., Ltd.
+  description: &description A software engineer.
   image: &image https://avatars2.githubusercontent.com/u/132569?s=460&v=4
   sns:
     hatena: tarao
