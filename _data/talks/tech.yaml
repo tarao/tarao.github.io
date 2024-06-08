@@ -1,3 +1,12 @@
+- title: record4s --- Extensible Records for Scala 3, and Domain Modeling with Structural Types
+  subtitle: record4s --- Scala 3のための拡張可能レコード、そして構造的型によるドメインモデリング
+  author: Lintaro INA (id:tarao)
+  conference:
+    title: ScalaMatsuri 2024
+    address: Koto-ku, Tokyo, Japan
+    date: June 2024
+    url: https://scalamatsuri.org/
+  url: https://speakerdeck.com/tarao/record4s-extensible-records-for-scala-3-and-domain-modeling-with-structural-types
 - title: 仮想関数テーブルと型クラスを見比べる
   author: 伊奈 林太郎
   conference:
