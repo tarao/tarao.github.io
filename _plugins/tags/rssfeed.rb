@@ -2,6 +2,8 @@ require 'net/http'
 require 'uri'
 require 'rss'
 
+REXML::Document.entity_expansion_text_limit = 1024*1024*1024
+
 module Jekyll
   class RssFeedReader < Liquid::Block
     def initialize(tag_name, markup, parse_context)
