@@ -25,7 +25,7 @@ require 'uri'
 # register all default OEmbed providers
 ::OEmbed::Providers.register_all()
 # since register_all does not register all default providers, we need to do this here. See https://github.com/judofyr/ruby-oembed/issues/18
-::OEmbed::Providers.register(::OEmbed::Providers::Slideshare, ::OEmbed::Providers::Yfrog, ::OEmbed::Providers::MlgTv)
+::OEmbed::Providers.register(::OEmbed::Providers::Yfrog, ::OEmbed::Providers::MlgTv)
 ::OEmbed::Providers.register_fallback(::OEmbed::ProviderDiscovery, ::OEmbed::Providers::Embedly, ::OEmbed::Providers::OohEmbed)
 
 module Jekyll
@@ -45,7 +45,6 @@ module Jekyll
       url = Liquid::Template.parse(@text).render context
       url.strip!
 
-      $stderr.puts("::OEmbed::providers.get(#{url})")
       result = cache.getset(url) do
         begin
           # oembed look up
