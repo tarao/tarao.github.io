@@ -45,7 +45,6 @@ module Jekyll
       url = Liquid::Template.parse(@text).render context
       url.strip!
 
-      $stderr.puts("::OEmbed::providers.get(#{url})")
       result = cache.getset(url) do
         begin
           # oembed look up
