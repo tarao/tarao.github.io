@@ -49,8 +49,8 @@ module Jekyll
         begin
           # oembed look up
           ::OEmbed::Providers.get(url)
-        rescue ::OEmbed::NotFound => e
-          false
+        rescue
+          nil
         end
       end
 
